@@ -6,7 +6,7 @@ from PIL import Image
 current_dir = Path(__file__).parent if "__file__" in locals() else Path.cwd()
 css_file = current_dir / "styles" / "main.css"
 resume_file = current_dir / "assets" / "CV.pdf"
-profile_pic = current_dir / "assets" / "profile-pic.png"  # Removed the extra space here
+profile_pic = current_dir / "assets" / "profile-pic.png"
 
 # General Settings of the website
 PAGE_TITLE = "Personal Landing Website | Marvin Baesa"
@@ -21,7 +21,6 @@ SOCIAL_MEDIA = {
 }
 
 st.set_page_config(page_title=PAGE_TITLE, page_icon=PAGE_ICON)
-# st.title("Hello there!")
 
 # Load CSS, PDF, and Profile Pic
 with open(css_file) as f:
@@ -46,52 +45,54 @@ with col2:
     )
     st.write(EMAIL)
 
-#Social Links:
+# Social Links:
 st.write("#")
 cols = st.columns(len(SOCIAL_MEDIA))
 for index, (platform, link) in enumerate(SOCIAL_MEDIA.items()):
     cols[index].write(f"[{platform}]({link})")
 
-
-#Experience and Qualifications
+# Experience and Qualifications
 st.write("#")
 st.subheader("Experience & Qualifications")
 st.write(
     """
     - ✅ More than 3 years of experience extracting actionable insights from data
-    - ✅ Strong hands on experience and knowledge in Python, SQL and Excel
+    - ✅ Strong hands-on experience and knowledge in Python, SQL, and Excel
     - ✅ Good understanding of statistical principles and their respective applications
-    - ✅ Excellent team-player and displaying strong sense of initiative on tasks
+    - ✅ Excellent team-player and displaying a strong sense of initiative on tasks
     """
 )
 
-#SKills
+# Skills
 st.write("#")
 st.subheader("Hard Skills")
 st.write(
     """
-    - 👨‍💻 Programming: Python(Pandas,Openpyxl,Numpy,Matplotlib,Selenium,Streamlit,BeautifulSoup)
-    - 📊 Data Visualization: Power BI, MS Excel, Google Sheet and Tableau
-    - 🗃️ Data Processing: Data cleaning, Data transformation, Data wrangling and Data modelling
-    - 💻 Database: Mysql and Postgre SQL 
+    - 👨‍💻 Programming: Python (Pandas, Openpyxl, Numpy, Matplotlib, Selenium, Streamlit, BeautifulSoup)
+    - 📊 Data Visualization: Power BI, MS Excel, Google Sheet, and Tableau
+    - 🗃️ Data Processing: Data cleaning, Data transformation, Data wrangling, and Data modeling
+    - 💻 Database: MySQL and PostgreSQL
     """
 )
 
-
-#Work History
+# Work History
 st.write("#")
 st.subheader("Work History")
 st.write("---")
 
-#Job 1
-st.write("**Senior Data Analyst | Ross Industries")
+# Job 1
+st.write("**Senior Data Analyst | Ross Industries**")
 st.write("2/2020 - Present")
 st.write(
     """
-    - ▶️ Used Power BI and SQL to redefine and track KPI's surrounding marketing intiatives and supplied recommendations
-    to boost landing page conversion rate by 38%
-    - ▶️ Lead a team of 4 analyst to brainstorm potential marketing and sales improvements, and implemented
-    A/B tests to generate 15% more clients
+    - ▶️ Used Power BI and SQL to redefine and track KPIs surrounding marketing initiatives and supplied recommendations
+      to boost landing page conversion rate by 38%
+    - ▶️ Led a team of 4 analysts to brainstorm potential marketing and sales improvements, and implemented
+      A/B tests to generate 15% more clients
     - ▶️ Redesigned data model through iterations that improved refund and shipping projections by 12%
     """
 )
+
+# Deploy the app
+if __name__ == "__main__":
+    st.set_page_config(page_title=PAGE_TITLE, page_icon=PAGE_ICON)
