@@ -95,29 +95,3 @@ st.write(
     - ▶️ Redesigned data model through iterations that improved refund and shipping projections by 12%
     """
 )
-
-#Job 1
-st.write("**Senior Data Analyst | Ross Industries")
-st.write("2/2020 - Present")
-st.write(
-    """
-    - ▶️ Used Power BI and SQL to redefine and track KPI's surrounding marketing intiatives and supplied recommendations
-    to boost landing page conversion rate by 38%
-    - ▶️ Lead a team of 4 analyst to brainstorm potential marketing and sales improvements, and implemented
-    A/B tests to generate 15% more clients
-    - ▶️ Redesigned data model through iterations that improved refund and shipping projections by 12%
-    """
-)
-
-#Job 1
-st.write("**Senior Data Analyst | Ross Industries")
-st.write("2/2020 - Present")
-st.write(
-    """
-    - ▶️ Used Power BI and SQL to redefine and track KPI's surrounding marketing intiatives and supplied recommendations
-    to boost landing page conversion rate by 38%
-    - ▶️ Lead a team of 4 analyst to brainstorm potential marketing and sales improvements, and implemented
-    A/B tests to generate 15% more clients
-    - ▶️ Redesigned data model through iterations that improved refund and shipping projections by 12%
-    """
-)
