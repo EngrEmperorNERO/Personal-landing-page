@@ -94,5 +94,6 @@ st.write(
     """
 )
 
-if __name__ == "__main__":
-    st.set_page_config(page_title=PAGE_TITLE, page_icon=PAGE_ICON)
+# Ensure there are no additional calls to set_page_config
+#if __name__ == "__main__":
+#    st.set_page_config(page_title=PAGE_TITLE, page_icon=PAGE_ICON)
