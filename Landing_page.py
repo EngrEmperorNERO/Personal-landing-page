@@ -20,6 +20,7 @@ SOCIAL_MEDIA = {
     "Github": "https://github.com/EngrEmperorNERO"
 }
 
+# Ensure set_page_config is called once and at the start
 st.set_page_config(page_title=PAGE_TITLE, page_icon=PAGE_ICON)
 
 # Load CSS, PDF, and Profile Pic
@@ -93,6 +94,5 @@ st.write(
     """
 )
 
-# Deploy the app
 if __name__ == "__main__":
     st.set_page_config(page_title=PAGE_TITLE, page_icon=PAGE_ICON)
